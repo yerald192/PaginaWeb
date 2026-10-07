@@ -25,6 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // HEADER Y NAVEGACIÓN
 // ============================================
 function renderHeader() {
+  if (typeof window.renderDynamicHeader === 'function') {
+    window.renderDynamicHeader();
+    return;
+  }
   const header = document.getElementById('site-header');
   if (!header) return;
 
@@ -47,7 +51,7 @@ function renderHeader() {
 
     <nav class="flex min-h-[5.7rem] items-center justify-between gap-6" aria-label="Navegación principal">
       <a href="index.html" class="brand-mark flex items-center gap-3" aria-label="Ir al inicio">
-        <img class="h-10 w-36 object-contain object-left" src="assets/logo.png" alt="IESTP Huanta" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <img class="h-12 w-auto max-w-[220px] object-contain object-left" src="assets/logo.png" alt="IESTP Huanta" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
         <span class="hidden items-center gap-2" style="display: none;">
           <span class="grid size-10 place-items-center rounded-xl bg-navy text-lg font-extrabold text-white">H</span>
           <span class="leading-tight">
@@ -513,6 +517,10 @@ function renderContacto() {
 // FOOTER
 // ============================================
 function renderFooter() {
+  if (typeof window.renderDynamicFooter === 'function') {
+    window.renderDynamicFooter();
+    return;
+  }
   const footer = document.getElementById('site-footer');
   if (!footer) return;
 
@@ -534,7 +542,8 @@ function renderFooter() {
       <nav aria-label="Enlaces principales del pie de página">
         <h3 class="font-extrabold text-gold">Explora</h3>
         <ul class="mt-5 space-y-3 text-sm text-slate-300">
-          <li><a class="transition hover:text-white" href="#nosotros">Sobre nosotros</a></li>
+          <li><a class="transition hover:text-white" href="pages/nosotros.html">Sobre nosotros</a></li>
+          <li><a class="transition hover:text-white" href="pages/plana-docente.html">Plana Docente</a></li>
           <li><a class="transition hover:text-white" href="#carreras">Programas de estudio</a></li>
           <li><a class="transition hover:text-white" href="pages/noticias.html">Noticias y eventos</a></li>
         </ul>

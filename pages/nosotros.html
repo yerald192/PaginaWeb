@@ -3,180 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Conoce la historia, misión, visión y valores del IESTP Huanta." />
+    <meta name="description" content="Conoce la historia, licenciamiento, misión, visión, valores, organización y plana jerárquica del Instituto de Educación Superior Público Huanta." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/tailwind.generated.css" />
-    <title>Presentación | IESTP Huanta</title>
+    <title>Nosotros | Presentación Institucional | IESTP Huanta</title>
   </head>
-  <body class="bg-[#fbfcfa] text-ink">
-    <header class="border-b border-slate-200/80 bg-white/90 backdrop-blur">
-      <nav class="section-wrap flex min-h-20 items-center justify-between gap-6" aria-label="Navegación principal">
-        <a href="../index.html" class="flex items-center gap-3 text-navy" aria-label="Ir al inicio">
-          <span class="grid size-11 place-items-center rounded-xl bg-navy text-lg font-extrabold text-white">H</span>
-          <span class="leading-tight">
-            <strong class="block text-sm font-extrabold">IESTP Huanta</strong>
-            <small class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">Educación que transforma</small>
-          </span>
-        </a>
-        <div class="flex items-center gap-3">
-          <a href="../index.html" class="rounded-full px-4 py-2 text-sm font-bold text-slate-600 hover:text-teal">Inicio</a>
-          <a href="admision.html" class="rounded-full bg-gold px-5 py-3 text-sm font-extrabold text-navy transition hover:bg-amber-300">Admisión <span aria-hidden="true">→</span></a>
-        </div>
-      </nav>
-    </header>
+  <body class="bg-[#fbfcfa] text-ink antialiased">
+    <!-- ENCABEZADO DINÁMICO (RENDERIZADO EN JS) -->
+    <header id="site-header" class="sticky top-0 z-40 bg-white shadow-sm"></header>
 
-    <main>
-      <section class="bg-navy py-20 text-white lg:py-28">
-        <div class="section-wrap grid gap-10 lg:grid-cols-[1fr_0.8fr] lg:items-center">
-          <div>
-            <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-gold">Presentación</p>
-            <h1 class="mt-5 max-w-2xl text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">
-              Breve presentación de la institución
-            </h1>
-            <p class="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-              El Instituto de Educación Superior Público "Huanta" forma profesionales técnicos para responder a las necesidades de Huanta, Ayacucho y el país.
-            </p>
-            <div class="mt-8 flex flex-wrap gap-4">
-              <a href="#historia" class="rounded-full bg-gold px-6 py-3.5 text-sm font-extrabold text-navy transition hover:bg-amber-300">
-                Conoce nuestra historia <span aria-hidden="true">↓</span>
-              </a>
-              <a href="contacto.html" class="rounded-full border border-white/30 px-6 py-3.5 text-sm font-bold text-white hover:bg-white/10">
-                Contáctanos
-              </a>
-            </div>
-          </div>
-          <div class="relative">
-            <img class="h-80 w-full rounded-[2rem] object-cover shadow-2xl shadow-black/20" src="../assets/presentacion-instituto.jpg" alt="Entrada principal del Instituto de Educación Superior Público Huanta" fetchpriority="high" />
-            <div class="absolute -bottom-5 -left-5 rounded-2xl bg-gold px-5 py-4 text-sm font-extrabold text-navy shadow-xl">
-              Formación<br />con propósito
-            </div>
-          </div>
-        </div>
-      </section>
+    <main id="nosotros-main">
+      <!-- HERO DINÁMICO -->
+      <section id="nosotros-hero" class="bg-navy text-white"></section>
 
-      <section id="historia" class="section-wrap grid gap-12 py-20 lg:grid-cols-[0.85fr_1.15fr] lg:py-28">
-        <div>
-          <p class="eyebrow">Reseña histórica</p>
-          <h2 class="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-navy sm:text-4xl">
-            Instituto de Educación Superior Público "Huanta"
-          </h2>
-        </div>
-        <div class="text-lg leading-8 text-slate-600">
-          <p>
-            Fue creado por RM Nro.265-86-ED, del 05 de junio de 1986. Inicialmente, fue creado con las especialidades de Agropecuaria y Electricidad; al año siguiente se creó la especialidad de Enfermería Técnica, con RD Nro.3983-87-ED.
-          </p>
-          <p class="mt-5">
-            posteriormente, las necesidades formativas de la educación técnica y la demanda del mercado laboral permitieron la sustitución y ampliación de nuevos programas de estudio, como Computación e Informática e Industrias Alimentarias.
-          </p>
-          <p class="mt-5">
-            El 19 de abril de 1997 se consolidó el programa de Industrias Alimentarias y, posteriormente, el programa de Mecánica Automotriz fue creado por RD Nro.2001-2009-ED, el 24 de agosto de 2009.
-          </p>
-          <div class="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-3">
-            <div class="rounded-2xl bg-mist p-5">
-              <strong class="block text-3xl font-extrabold text-navy">39</strong>
-              <span class="text-sm font-semibold text-slate-500">años al servicio de la educación</span>
-            </div>
-            <div class="rounded-2xl bg-mist p-5">
-              <strong class="block text-3xl font-extrabold text-navy">5</strong>
-              <span class="text-sm font-semibold text-slate-500">programas de estudios</span>
-            </div>
-            <div class="rounded-2xl bg-mist p-5">
-              <strong class="block text-3xl font-extrabold text-navy">LIC</strong>
-              <span class="text-sm font-semibold text-slate-500">instituto licenciado</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!-- BARRA DE PESTAÑAS / NAVEGACIÓN RÁPIDA -->
+      <nav id="nosotros-tabs-nav" class="sticky top-20 z-30 border-b border-slate-200/90 bg-white/95 backdrop-blur" aria-label="Secciones de Nosotros"></nav>
 
-      <section class="bg-mist py-20 lg:py-24">
-        <div class="section-wrap grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-          <div>
-            <p class="eyebrow">Instituto licenciado</p>
-            <h2 class="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-navy sm:text-4xl">
-              Formación de calidad para nuestra comunidad
-            </h2>
-            <p class="mt-6 text-lg leading-8 text-slate-600">
-              El Instituto de Educación Superior Público Huanta está comprometido en mejorar la calidad de la educación que ofrecemos. El licenciamiento es un paso fundamental que garantiza que nuestros programas académicos y servicios cumplen con los estándares y requisitos establecidos por las autoridades educativas competentes.
-            </p>
-            <p class="mt-5 text-lg leading-8 text-slate-600">
-              Contar con el licenciamiento refleja nuestro compromiso con la excelencia académica y el desarrollo de nuestra comunidad educativa. Seguimos trabajando continuamente para mantener y superar estos estándares.
-            </p>
-          </div>
-          <div class="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
-            <h3 class="text-xl font-extrabold text-navy">Programas de estudios</h3>
-            <ul class="mt-5 space-y-3 text-slate-600">
-              <li class="flex items-center gap-2"><span class="text-teal">✓</span> Diseño y Programación Web</li>
-              <li class="flex items-center gap-2"><span class="text-teal">✓</span> Enfermería Técnica</li>
-              <li class="flex items-center gap-2"><span class="text-teal">✓</span> Mecatrónica Automotriz</li>
-              <li class="flex items-center gap-2"><span class="text-teal">✓</span> Industrias de alimentos y bebidas</li>
-              <li class="flex items-center gap-2"><span class="text-teal">✓</span> Producción Agropecuaria</li>
-            </ul>
-            <a class="mt-7 inline-flex rounded-full bg-navy px-5 py-3 text-sm font-extrabold text-white hover:bg-teal" href="carreras.html">
-              Ver programas <span class="ml-2" aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
-      </section>
+      <!-- RESEÑA HISTÓRICA & PRESENTACIÓN -->
+      <section id="historia" class="border-b border-slate-200 bg-white scroll-mt-36"></section>
 
-      <section id="valores" class="bg-mist py-20 lg:py-24">
-        <div class="section-wrap">
-          <div class="mb-10 max-w-2xl">
-            <p class="eyebrow">Lo que nos guía</p>
-            <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
-              Misión, visión y valores
-            </h2>
-          </div>
-          <div class="grid gap-5 md:grid-cols-3">
-            <article class="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
-              <span class="text-xs font-extrabold uppercase tracking-widest text-teal">01 · Misión</span>
-              <h3 class="mt-6 text-xl font-extrabold text-navy">Formar para transformar</h3>
-              <p class="mt-3 leading-7 text-slate-600">
-                Formar profesionales técnicos con competencias de calidad, innovación, emprendimiento y compromiso con el desarrollo de la sociedad.
-              </p>
-            </article>
-            <article class="rounded-2xl bg-navy p-7 text-white transition hover:-translate-y-1 hover:shadow-lg">
-              <span class="text-xs font-extrabold uppercase tracking-widest text-gold">02 · Visión</span>
-              <h3 class="mt-6 text-xl font-extrabold">Excelencia que inspira</h3>
-              <p class="mt-3 leading-7 text-slate-300">
-                Ser una institución líder en educación superior tecnológica, reconocida por su excelencia académica y profesionales competitivos.
-              </p>
-            </article>
-            <article class="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
-              <span class="text-xs font-extrabold uppercase tracking-widest text-teal">03 · Valores</span>
-              <h3 class="mt-6 text-xl font-extrabold text-navy">Crecer con integridad</h3>
-              <p class="mt-3 leading-7 text-slate-600">
-                Promovemos respeto, responsabilidad, innovación, colaboración y servicio a nuestra comunidad.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <!-- INSTITUTO LICENCIADO -->
+      <section id="licenciamiento" class="bg-mist border-b border-slate-200 scroll-mt-36"></section>
 
-      <section class="section-wrap grid gap-8 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-28">
-        <img class="h-72 w-full rounded-[2rem] object-cover shadow-xl" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=85" alt="Estudiantes participando en una actividad académica" loading="lazy" />
-        <div>
-          <p class="eyebrow">Tu próximo capítulo empieza aquí</p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-navy">
-            Sé parte de nuestra comunidad
-          </h2>
-          <p class="mt-4 leading-7 text-slate-600">
-            Conoce nuestros programas y encuentra el camino técnico que conecta con tus talentos.
-          </p>
-          <div class="mt-7 flex flex-wrap gap-4">
-            <a href="carreras.html" class="rounded-full bg-navy px-6 py-3.5 text-sm font-extrabold text-white hover:bg-teal">
-              Ver programas <span aria-hidden="true">→</span>
-            </a>
-            <a href="admision.html" class="rounded-full border-2 border-gold px-6 py-3 text-sm font-extrabold text-navy hover:bg-gold">
-              Postula ahora
-            </a>
-          </div>
-        </div>
-      </section>
+      <!-- MISIÓN, VISIÓN Y VALORES -->
+      <section id="valores" class="border-b border-slate-200 bg-white scroll-mt-36"></section>
+
+      <!-- ORGANIZACIÓN INSTITUCIONAL -->
+      <section id="organizacion" class="bg-mist border-b border-slate-200 scroll-mt-36"></section>
+
+      <!-- PLANA JERÁRQUICA -->
+      <section id="plana-jerarquica" class="border-b border-slate-200 bg-white scroll-mt-36"></section>
     </main>
 
-    <footer data-site-footer class="border-t-4 border-gold bg-navy text-white" aria-labelledby="footer-title"></footer>
-    <script src="../js/footer.js" defer></script>
+    <!-- PIE DE PÁGINA DINÁMICO (RENDERIZADO EN JS) -->
+    <footer id="site-footer"></footer>
+
+    <!-- SCRIPTS DINÁMICOS -->
+    <script src="../js/data.js"></script>
+    <script src="../js/icons.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/nosotros.js"></script>
+    <script src="../js/footer.js"></script>
   </body>
 </html>

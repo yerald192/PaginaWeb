@@ -30,13 +30,19 @@
 }
 
 @layer components {
+  .header-wrap {
+    width: 100%;
+    padding-inline: clamp(1rem, 3.5vw, 4.5rem);
+  }
   .section-wrap {
-    width: min(100% - 2rem, 72rem);
+    width: 100%;
+    max-width: 100rem;
     margin-inline: auto;
+    padding-inline: clamp(1rem, 3.5vw, 4.5rem);
   }
   .footer-wrap {
     width: 100%;
-    padding-inline: clamp(1rem, 5vw, 5rem);
+    padding-inline: clamp(1rem, 3.5vw, 4.5rem);
   }
   .eyebrow {
     color: var(--color-teal);

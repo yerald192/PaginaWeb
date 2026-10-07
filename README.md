@@ -14,31 +14,27 @@ Sitio web dinámico del Instituto de Educación Superior Tecnológico Público H
 
 ```
 PaginaWeb/
-├── index.html              # Página principal (contenido renderizado dinámicamente)
+├── index.html              # Página principal (renderizado 100% dinámico por JS)
 ├── css/
 │   ├── tailwind.css        # Fuente de estilos Tailwind + personalizaciones
-│   └── tailwind.generated.css  # CSS generado (no editar manualmente)
+│   └── tailwind.generated.css  # CSS compilado
 ├── js/
-│   ├── data.js             # Datos centralizados del sitio (carreras, servicios, etc.)
-│   ├── app.js              # Lógica principal - renderiza todas las secciones
-│   └── footer.js           # Footer dinámico para páginas internas
-├── pages/                  # Páginas internas
-│   ├── admision.html
-│   ├── nosotros.html
+│   ├── data.js             # Estado y datos centralizados (SITE_DATA)
+│   ├── header.js           # Componente dinámico de encabezado y navegación responsiva
+│   ├── footer.js           # Componente dinámico de pie de página institucional
+│   ├── nosotros.js         # Módulo dinámico para la réplica de Nosotros
+│   ├── plana-docente.js    # Módulo dinámico para la réplica de Plana Docente (búsqueda, filtros, vistas)
+│   └── app.js              # Módulo dinámico para la página de inicio
+├── pages/                  # Páginas internas (esqueletos semánticos dinamizados por JS)
+│   ├── nosotros.html       # Presentación institucional completa
+│   ├── plana-docente.html  # Plana docente por carrera con hojas de vida
 │   ├── carreras.html
+│   ├── admision.html
 │   ├── servicios.html
-│   ├── eventos.html
-│   ├── galeria.html
-│   ├── noticias.html
-│   ├── contacto.html
 │   ├── transparencia.html
 │   ├── tramites.html
-│   └── matricula.html
-├── assets/                 # Recursos estáticos
-│   ├── logo.png
-│   ├── hero-graduado.jpg
-│   └── presentacion-instituto.jpg
-├── components/             # Componentes HTML reutilizables (referencia)
+│   └── ...
+├── assets/                 # Recursos estáticos (logos, fotos)
 └── package.json
 ```
 
