@@ -32,7 +32,8 @@ const SITE_DATA = {
         { titulo: "Visión, Misión y Valores", url: "pages/nosotros.html#valores" },
         { titulo: "Organización Institucional", url: "pages/nosotros.html#organizacion" },
         { titulo: "Plana Jerárquica", url: "pages/nosotros.html#plana-jerarquica" },
-        { titulo: "Plana Docente", url: "pages/plana-docente.html" }
+        { titulo: "Plana Docente", url: "pages/plana-docente.html" },
+        { titulo: "Local", url: "pages/nosotros.html#local" }
       ]
     },
     {
